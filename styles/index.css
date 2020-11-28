@@ -1,0 +1,209 @@
+@font-face{
+    font-family: coorporation games;
+    src: url("font/Corporation_Games.otf");
+}
+@font-face{
+    font-family: gotham-black;
+    src: url("font/Gotham-Black.otf");
+}
+
+body{ 
+    background-image: linear-gradient(to right, rgba(4,16,45,0.6), 
+                    rgba(247,86,124,0.15));
+    background-color: rgba(4,16,45,1);
+    padding-top: 5%;
+}
+
+svg{
+    display: block;
+    margin: auto;
+    height: 500px;
+    transition: 0.8s;
+}
+
+img{
+    display: none;
+}
+
+.coorporation{
+    font-family: 'coorporation games';
+}
+
+.gotham{
+    font-family: 'gotham-black';
+}
+
+.coming-soon-text{
+    display: block;
+    margin: auto;
+    opacity: 0;
+    height:0;
+    transition: 1s ease-out;
+}
+
+.coming-soon-text-reveal{
+    height:auto;
+    opacity: 1;
+    transition: 1s ease-out;
+}
+
+.logo{
+    max-width: 400px;
+}
+
+.logo-before{
+    margin-left: -10px;
+}
+
+.logo-after{
+    margin-left: -1 0px;
+}
+
+.backline{
+    display: none;
+}
+
+.header-left{
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.header-right{
+    position: absolute;
+    top: 0; 
+    right: 0;
+}
+
+.mid-left{
+    position: absolute;
+    top: 30%; 
+    left: 0;
+}
+
+.mid-right{
+    position: absolute;
+    top: 40%;  
+    right: 2%;
+}
+
+.footer-left{
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+}
+
+.footer-right{
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+}
+
+
+/* media query */
+@media (max-width: 1000px){
+    h1{ 
+        padding-top: 5%;
+        font-size: 2.2rem;
+    }
+
+    img{
+        max-width: 60%;
+    }
+
+    .comingsoon{
+        padding-top: 7%;
+    }
+}
+
+@media (max-width: 800px){
+    h1{
+        font-size: 1.8rem;
+    }
+
+    img{
+        max-width: 50%;
+    }
+    
+    .logo-before{
+        margin-left: -90px;
+        transition: 1s;
+    }
+
+    .logo-after{
+        padding-top: 10%;
+        margin: 0;
+        transition: 1s;
+    }
+
+    .comingsoon{
+        padding-top: 15%;
+    }
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 1.6rem;
+    }
+
+    img{
+        max-width: 40%;
+        max-height: 30%;
+    }
+
+    .logo-before{
+        margin-left: -100px;
+        transition: 1s;
+    }
+
+    .logo-after{
+        margin: 0;
+        padding-top: 20%;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        padding-top: 7%;
+        font-size: 1.2rem;
+    }
+
+    img{
+        max-width: 40%;
+        max-height: 30%;
+    }
+
+    .logo-before{
+        margin-left: -130px;
+        transition: 1s;
+    }
+
+    .logo-after{
+        margin: 0;
+        padding-top: 30%;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 400px){
+    h1{
+        padding-top: 10%;
+        font-size: 1rem;
+    }
+
+    img{
+        max-width: 35%;
+        max-height: 25%;
+    }
+    .logo-before{
+        margin-left: -150px;
+        transition: 1s;
+    }
+
+    .logo-after{
+        margin: 0;
+        padding-top: 40%;
+        transition: 1s;
+    }
+}
