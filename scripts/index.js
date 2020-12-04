@@ -6,8 +6,8 @@ anime({
     direction: 'alternate',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
-    duration: 1,
-    delay: (el, i) => { return i * 1 },
+    duration: 1000,
+    delay: (el, i) => { return i * 70 },
     complete: function(anim) {
             
         setTimeout(() =>  {
@@ -29,7 +29,7 @@ anime({
                 $( ".footer-mid" ).show(2000);
                 $("img").show(3000);
             }, 1000);        
-        }, 1);        
+        }, 2000);        
 
         $( ".backline" ).show('slow');
         //backline animation
