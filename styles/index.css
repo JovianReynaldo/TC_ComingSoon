@@ -35,6 +35,7 @@ img{
 .coming-soon-text{
     display: block;
     margin: auto;
+    margin-top: 2%;
     opacity: 0;
     height:0;
     transition: 1s ease-out;
@@ -51,11 +52,11 @@ img{
 }
 
 .logo-before{
-    margin-left: -10px;
+    margin-left: -30px;
 }
 
 .logo-after{
-    margin-left: -1 0px;
+    margin-left: -30px;
 }
 
 .backline{
@@ -81,9 +82,12 @@ img{
 }
 
 .mid-right{
+    display: none;
     position: absolute;
-    top: 40%;  
+    top: 30%;  
     right: 2%;
+    font-size: 30px;
+    color: #F7567C;
 }
 
 .footer-left{
@@ -98,16 +102,70 @@ img{
     right: 0;
 }
 
+.footer-mid{
+    display: none;
+    position: absolute;
+    /* top: 30%;   */
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer-mid .fa-instagram {
+    color: #F7567C ;
+}
+
+.footer-mid .fa-facebook {
+    color: #eaebff ;
+}
+
+.footer-mid .fa-linkedin{
+    color: #0072b1 ;
+}
+
+.footer-mid .fa-twitter{
+    color: rgb(61, 242, 255);
+}
+
+.footer-mid .fa-youtube{
+    color: rgb(221, 2, 2);
+}
+
+.footer-mid .fa-tiktok{
+    color: rgb(255, 255, 255);
+}
+
+.footer-mid .fa-line{
+    color: rgb(0, 211, 11);
+}
+
+.footer-left{
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+}
+
+.footer-right{
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+}
 
 /* media query */
 @media (max-width: 1000px){
-    h1{ 
+    h1{
+        padding-top: 0%;
+        font-size: 2.4rem;
+    }
+    h3{
         padding-top: 5%;
         font-size: 2.2rem;
-    }
+    } 
 
     img{
-        max-width: 60%;
+        max-width: 35%;
     }
 
     .comingsoon{
@@ -117,11 +175,17 @@ img{
 
 @media (max-width: 800px){
     h1{
+        padding-top: 0%;
         font-size: 1.8rem;
     }
+    h3{
+        padding-top: 10%;
+        font-size: 1.6rem;
+    }
+
 
     img{
-        max-width: 50%;
+        max-width: 30%;
     }
     
     .logo-before{
@@ -132,6 +196,7 @@ img{
     .logo-after{
         padding-top: 10%;
         margin: 0;
+        margin-left: -20px;
         transition: 1s;
     }
 
@@ -142,6 +207,11 @@ img{
 
 @media (max-width: 600px){
     h1{
+        padding-top: 0%;
+        font-size: 1.8rem;
+    }
+    h3{
+        padding-top: 10%;
         font-size: 1.6rem;
     }
 
@@ -157,37 +227,52 @@ img{
 
     .logo-after{
         margin: 0;
+        margin-left: -20px;
         padding-top: 20%;
         transition: 1s;
+    }
+
+    .footer-mid{
+        font-size: 20px;
+        bottom: 10%; 
     }
 }
 
 @media (max-width: 500px){
     h1{
+        padding-top: 0%;
+        font-size: 1.4rem;
+    }
+
+    h3{
         padding-top: 7%;
         font-size: 1.2rem;
     }
 
     img{
-        max-width: 40%;
+        max-width: 30%;
         max-height: 30%;
     }
 
     .logo-before{
-        margin-left: -130px;
+        margin-left: -140px;
         transition: 1s;
     }
 
     .logo-after{
         margin: 0;
+        margin-left: -20px;
         padding-top: 30%;
         transition: 1s;
-    }
+    } 
 }
 
 @media (max-width: 400px){
     h1{
-        padding-top: 10%;
+        font-size: 1.3rem;
+    }
+    h3{
+        padding-top: 20%;
         font-size: 1rem;
     }
 
@@ -196,12 +281,13 @@ img{
         max-height: 25%;
     }
     .logo-before{
-        margin-left: -135px;
+        margin-left: -175px;
         transition: 1s;
     }
 
     .logo-after{
         margin: 0;
+        margin-left: -30px;
         padding-top: 40%;
         transition: 1s;
     }

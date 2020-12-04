@@ -1,13 +1,13 @@
 //logo animation
 anime({
-    targets: '.logo polygon, .logo image, .logo path',
+    targets: '.logo polygon, .logo image, .logo path, .logo rect, .logo mask',
     fillOpacity: [0, 1],
     loop: false,
     direction: 'alternate',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
-    duration: 1500,
-    delay: (el, i) => { return i * 70 },
+    duration: 1,
+    delay: (el, i) => { return i * 1 },
     complete: function(anim) {
             
         setTimeout(() =>  {
@@ -26,9 +26,10 @@ anime({
             $( "#logo" ).even().addClass( "logo-after" );
             setTimeout(() =>  {
                 $( "#coming-soon-text" ).even().addClass( "coming-soon-text-reveal" );
-                $("img").show('slow');
+                $( ".footer-mid" ).show(2000);
+                $("img").show(3000);
             }, 1000);        
-        }, 2000);        
+        }, 1);        
 
         $( ".backline" ).show('slow');
         //backline animation
