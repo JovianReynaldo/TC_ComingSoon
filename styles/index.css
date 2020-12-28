@@ -1,108 +1,108 @@
-@font-face{
-    font-family: coorporation games;
-    src: url("font/Corporation_Games.otf");
+@font-face {
+    font-family: bomberescort;
+    src: url("font//BomberEscort.otf");
 }
-@font-face{
+
+@font-face {
     font-family: gotham-black;
     src: url("font/Gotham-Black.otf");
 }
 
-body{ 
-    background-image: linear-gradient(to right, rgba(4,16,45,0.6), 
-                    rgba(247,86,124,0.15));
-    background-color: rgba(4,16,45,1);
+body {
+    background-image: linear-gradient(to right, rgba(4, 16, 45, 0.6), rgba(247, 86, 124, 0.15));
+    background-color: rgba(4, 16, 45, 1);
 }
 
-svg{
+svg {
     display: block;
     margin: auto;
     height: 500px;
     transition: 0.8s;
 }
 
-img{
+img {
     display: none;
 }
 
-.coorporation{
-    font-family: 'coorporation games';
+.bomberescort {
+    font-family: 'bomberescort';
 }
 
-.gotham{
+.gotham {
     font-family: 'gotham-black';
 }
 
-.coming-soon-text{
+.coming-soon-text {
     display: block;
     margin: auto;
-    margin-top: 2%;
+    margin-top: -2%;
     opacity: 0;
-    height:0;
+    height: 0;
     transition: 1s ease-out;
 }
 
-.coming-soon-text-reveal{
-    height:auto;
+.coming-soon-text-reveal {
+    height: auto;
     opacity: 1;
     transition: 1s ease-out;
 }
 
-.logo{
+.logo {
     max-width: 400px;
 }
 
-.logo-before{
+.logo-before {
     margin-left: -30px;
 }
 
-.logo-after{
+.logo-after {
     margin-left: -30px;
 }
 
-.backline{
+.backline {
     display: none;
 }
 
-.header-left{
+.header-left {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
 }
 
-.header-right{
+.header-right {
     position: absolute;
-    top: 0; 
+    top: 0;
     right: 0;
 }
 
-.mid-left{
+.mid-left {
     position: absolute;
-    top: 30%; 
+    top: 30%;
     left: 0;
 }
 
-.mid-right{
+.mid-right {
     display: none;
     position: absolute;
-    top: 30%;  
+    top: 30%;
     right: 2%;
     font-size: 30px;
     color: #F7567C;
 }
 
-.footer-left{
+.footer-left {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     left: 0;
 }
 
-.footer-right{
+.footer-right {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     right: 0;
 }
 
-.footer-mid{
+.footer-mid {
     display: none;
     position: absolute;
     /* top: 30%;   */
@@ -114,178 +114,164 @@ img{
 }
 
 .footer-mid .fa-instagram {
-    color: #F7567C ;
+    color: white;
 }
 
 .footer-mid .fa-facebook {
-    color: #eaebff ;
+    color: #eaebff;
 }
 
-.footer-mid .fa-linkedin{
-    color: #0072b1 ;
+.footer-mid .fa-linkedin {
+    color: white;
 }
 
-.footer-mid .fa-twitter{
-    color: rgb(61, 242, 255);
+.footer-mid .fa-twitter {
+    color: white;
 }
 
-.footer-mid .fa-youtube{
-    color: rgb(221, 2, 2);
+.footer-mid .fa-youtube {
+    color: white;
 }
 
-.footer-mid .fa-tiktok{
+.footer-mid .fa-tiktok {
     color: rgb(255, 255, 255);
 }
 
-.footer-mid .fa-line{
-    color: rgb(0, 211, 11);
+.footer-mid .fa-line {
+    color: white;
 }
 
-.footer-left{
+.footer-left {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     left: 0;
 }
 
-.footer-right{
+.footer-right {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     right: 0;
 }
 
+
 /* media query */
-@media (max-width: 1000px){
-    h1{
+
+@media (max-width: 1000px) {
+    h1 {
         padding-top: 0%;
         font-size: 2.4rem;
     }
-    h3{
+    h3 {
         padding-top: 5%;
         font-size: 2.2rem;
-    } 
-
-    img{
+    }
+    img {
         max-width: 35%;
     }
-
-    .comingsoon{
+    .comingsoon {
         padding-top: 7%;
     }
 }
 
-@media (max-width: 800px){
-    h1{
+@media (max-width: 800px) {
+    h1 {
         padding-top: 0%;
-        font-size: 1.8rem;
+        font-size: 2.8rem;
     }
-    h3{
+    h3 {
         padding-top: 10%;
         font-size: 1.6rem;
     }
-
-
-    img{
+    img {
         max-width: 30%;
     }
-    
-    .logo-before{
+    .logo-before {
         margin-left: -90px;
         transition: 1s;
     }
-
-    .logo-after{
+    .logo-after {
         padding-top: 10%;
         margin: 0;
         margin-left: -20px;
         transition: 1s;
     }
-
-    .comingsoon{
+    .comingsoon {
         padding-top: 15%;
     }
 }
 
-@media (max-width: 600px){
-    h1{
+@media (max-width: 600px) {
+    h1 {
         padding-top: 0%;
         font-size: 1.8rem;
     }
-    h3{
+    h3 {
         padding-top: 10%;
         font-size: 1.6rem;
     }
-
-    img{
+    img {
         max-width: 40%;
         max-height: 30%;
     }
-
-    .logo-before{
+    .logo-before {
         margin-left: -100px;
         transition: 1s;
     }
-
-    .logo-after{
+    .logo-after {
         margin: 0;
         margin-left: -20px;
         padding-top: 20%;
         transition: 1s;
     }
-
-    .footer-mid{
+    .footer-mid {
         font-size: 20px;
-        bottom: 10%; 
+        bottom: 10%;
     }
 }
 
-@media (max-width: 500px){
-    h1{
+@media (max-width: 500px) {
+    h1 {
         padding-top: 0%;
         font-size: 1.4rem;
     }
-
-    h3{
+    h3 {
         padding-top: 7%;
         font-size: 1.2rem;
     }
-
-    img{
+    img {
         max-width: 30%;
         max-height: 30%;
     }
-
-    .logo-before{
+    .logo-before {
         margin-left: -140px;
         transition: 1s;
     }
-
-    .logo-after{
+    .logo-after {
         margin: 0;
         margin-left: -20px;
         padding-top: 30%;
         transition: 1s;
-    } 
+    }
 }
 
-@media (max-width: 400px){
-    h1{
-        font-size: 1.3rem;
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2.1rem;
+        margin-top: 25px;
     }
-    h3{
+    h3 {
         padding-top: 20%;
         font-size: 1rem;
     }
-
-    img{
+    img {
         max-width: 35%;
         max-height: 25%;
     }
-    .logo-before{
+    .logo-before {
         margin-left: -175px;
         transition: 1s;
     }
-
-    .logo-after{
+    .logo-after {
         margin: 0;
         margin-left: -30px;
         padding-top: 40%;
