@@ -7,21 +7,26 @@ anime({
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
     duration: 1000,
-    delay: (el, i) => { return i * 70 },
+    delay: (el, i) => { return i * 50 },
     complete: function(anim) {
             
         setTimeout(() =>  {
             //resize logo
-            if( $(window).width() < 400){
-                $("svg").height('200px');
-            } else if( $(window).width() < 500){
-                $("svg").height('250px');
-            } else if( $(window).width() < 800){
-                $("svg").height('320px');
-            } else {
-                $("svg").height('450px');
-            }
+            // if( $(window).width() < 400){
+            //     $("svg").height('200px');
+            // } else if( $(window).width() < 500){
+            //     $("svg").height('250px');
+            // } else if( $(window).width() < 800){
+            //     $("svg").height('320px');
+            // } else {
+            //     $("svg").height('450px');
+            // }
             
+            var marginTop = "-" + $(window).height() / 6 + "px"
+            console.log(marginTop)
+            $(".logodiv").height('80%');
+            $('.textdiv').css('margin-top', marginTop);            
+
             //show body
             $( "#logo" ).even().addClass( "logo-after" );
             setTimeout(() =>  {
